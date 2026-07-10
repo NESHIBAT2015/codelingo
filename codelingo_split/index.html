@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeLingo - تعلم البرمجة بأسلوب المراحل</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="loading" id="loading"><div class="binary-rain" aria-hidden="true"><span>1001101011010101010101110111001</span><span>0110100111010010110100101110101</span><span>1100101010111010100111010010110</span><span>0011010110101011101110010101101</span><span>1010101110111001001101011010101</span><span>0101110010110101010111011100101</span><span>1110010011010110101011101110010</span><span>0010111010101101001011101010110</span><span>1011010101010111011100100110101</span></div><div class="loading-grid" aria-hidden="true"></div><svg class="loader-avatar interactive-hacker" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" aria-label="Interactive hacker">
+  <circle class="ih-aura" cx="90" cy="86" r="78" fill="#00FF88" opacity="0.07"/>
+  <ellipse cx="90" cy="166" rx="55" ry="8" fill="#000" opacity="0.45"/>
+  <g class="ih-body">
+    <path d="M42 86C47 42 68 20 90 20s43 22 48 66l-13 54H55z" fill="#06110C" stroke="#00FF88" stroke-width="3"/>
+    <path d="M57 83C64 55 76 44 90 44s26 11 33 39c-10-7-21-11-33-11S67 76 57 83z" fill="#020403" stroke="#00FF88" stroke-opacity="0.65" stroke-width="2"/>
+    <rect x="52" y="78" width="76" height="30" rx="10" fill="#00170C" stroke="#00FF88" stroke-width="2.3"/>
+    <circle class="ih-eye ih-eye-left" cx="75" cy="93" r="5" fill="#00FF88"/>
+    <circle class="ih-eye ih-eye-right" cx="105" cy="93" r="5" fill="#00FF88"/>
+    <path d="M78 120h24" stroke="#00FF88" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
+  </g>
+  <g class="ih-computer">
+    <rect x="38" y="118" width="104" height="44" rx="8" fill="#03100A" stroke="#00FF88" stroke-width="3"/>
+    <rect x="48" y="127" width="84" height="25" rx="5" fill="#002B18" stroke="#00FF88" stroke-opacity="0.55"/>
+    <path class="ih-code-a" d="M56 136h22M56 145h34" stroke="#00FF88" stroke-width="2.5" stroke-linecap="round"/>
+    <path class="ih-code-b" d="M96 136h25M90 145h32" stroke="#39FF14" stroke-width="2" stroke-linecap="round" opacity="0.82"/>
+  </g>
+</svg><div class="load-text">CodeLingo</div><div class="small">تحميل منصة التدريب البرمجي</div><div class="loadbar"><span></span></div><div class="boot-logs"><span>loading modules...</span><span>compiling lessons...</span><span>unlocking terminal...</span><span>ready.</span></div></div>
+  <div class="toast" id="toast"></div>
+  <button class="hacker-widget" id="hackerWidget" type="button" title="CodeLingo hacker"><svg class="interactive-hacker widget-hacker" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" aria-label="Interactive hacker">
+  <circle class="ih-aura" cx="90" cy="86" r="78" fill="#00FF88" opacity="0.07"/>
+  <ellipse cx="90" cy="166" rx="55" ry="8" fill="#000" opacity="0.45"/>
+  <g class="ih-body">
+    <path d="M42 86C47 42 68 20 90 20s43 22 48 66l-13 54H55z" fill="#06110C" stroke="#00FF88" stroke-width="3"/>
+    <path d="M57 83C64 55 76 44 90 44s26 11 33 39c-10-7-21-11-33-11S67 76 57 83z" fill="#020403" stroke="#00FF88" stroke-opacity="0.65" stroke-width="2"/>
+    <rect x="52" y="78" width="76" height="30" rx="10" fill="#00170C" stroke="#00FF88" stroke-width="2.3"/>
+    <circle class="ih-eye ih-eye-left" cx="75" cy="93" r="5" fill="#00FF88"/>
+    <circle class="ih-eye ih-eye-right" cx="105" cy="93" r="5" fill="#00FF88"/>
+    <path d="M78 120h24" stroke="#00FF88" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
+  </g>
+  <g class="ih-computer">
+    <rect x="38" y="118" width="104" height="44" rx="8" fill="#03100A" stroke="#00FF88" stroke-width="3"/>
+    <rect x="48" y="127" width="84" height="25" rx="5" fill="#002B18" stroke="#00FF88" stroke-opacity="0.55"/>
+    <path class="ih-code-a" d="M56 136h22M56 145h34" stroke="#00FF88" stroke-width="2.5" stroke-linecap="round"/>
+    <path class="ih-code-b" d="M96 136h25M90 145h32" stroke="#39FF14" stroke-width="2" stroke-linecap="round" opacity="0.82"/>
+  </g>
+</svg></button>
+  <header class="topbar"><div class="brand"><svg class="logo-avatar interactive-hacker topbar-hacker" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" aria-label="Interactive hacker">
+  <circle class="ih-aura" cx="90" cy="86" r="78" fill="#00FF88" opacity="0.07"/>
+  <ellipse cx="90" cy="166" rx="55" ry="8" fill="#000" opacity="0.45"/>
+  <g class="ih-body">
+    <path d="M42 86C47 42 68 20 90 20s43 22 48 66l-13 54H55z" fill="#06110C" stroke="#00FF88" stroke-width="3"/>
+    <path d="M57 83C64 55 76 44 90 44s26 11 33 39c-10-7-21-11-33-11S67 76 57 83z" fill="#020403" stroke="#00FF88" stroke-opacity="0.65" stroke-width="2"/>
+    <rect x="52" y="78" width="76" height="30" rx="10" fill="#00170C" stroke="#00FF88" stroke-width="2.3"/>
+    <circle class="ih-eye ih-eye-left" cx="75" cy="93" r="5" fill="#00FF88"/>
+    <circle class="ih-eye ih-eye-right" cx="105" cy="93" r="5" fill="#00FF88"/>
+    <path d="M78 120h24" stroke="#00FF88" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
+  </g>
+  <g class="ih-computer">
+    <rect x="38" y="118" width="104" height="44" rx="8" fill="#03100A" stroke="#00FF88" stroke-width="3"/>
+    <rect x="48" y="127" width="84" height="25" rx="5" fill="#002B18" stroke="#00FF88" stroke-opacity="0.55"/>
+    <path class="ih-code-a" d="M56 136h22M56 145h34" stroke="#00FF88" stroke-width="2.5" stroke-linecap="round"/>
+    <path class="ih-code-b" d="M96 136h25M90 145h32" stroke="#39FF14" stroke-width="2" stroke-linecap="round" opacity="0.82"/>
+  </g>
+</svg><div><div class="brand-title">CodeLingo</div><div class="brand-sub">تعلم البرمجة بطريقة المراحل والوحدات</div></div></div><div class="stats"><div class="stat"><span id="icon-xp"></span>XP <span id="xp">0</span></div><div class="stat"><span id="icon-streak"></span><span id="streak">0</span></div><div class="stat"><span id="icon-done"></span><span id="done">0</span></div></div></header>
+  <div class="layout"><nav class="sidebar"><button class="nav-btn active" onclick="showScreen('home')" data-nav="home"><span id="nav-home"></span>الرئيسية</button><button class="nav-btn" onclick="showScreen('learn')" data-nav="learn"><span id="nav-learn"></span>اللغات</button><button class="nav-btn" onclick="showScreen('playground')" data-nav="playground"><span id="nav-code"></span>المختبر</button><button class="nav-btn" onclick="showScreen('roadmap')" data-nav="roadmap"><span id="nav-roadmap"></span>الخريطة</button><button class="nav-btn" onclick="showScreen('quests')" data-nav="quests"><span id="nav-quests"></span>المهام</button><button class="nav-btn" onclick="showScreen('review')" data-nav="review"><span id="nav-review"></span>المراجعة</button><button class="nav-btn" onclick="startPracticeMix()" data-nav="practice"><span id="nav-practice"></span>Practice Mix</button><button class="nav-btn" onclick="showScreen('mistakes')" data-nav="mistakes"><span id="nav-mistakes"></span>أخطاء شائعة</button><button class="nav-btn" onclick="showScreen('projects')" data-nav="projects"><span id="nav-projects"></span>مشاريعي</button><button class="nav-btn" onclick="showScreen('statsDetail')" data-nav="statsDetail"><span id="nav-statsDetail"></span>إحصائيات</button><button class="nav-btn" onclick="startSpeedRun()" data-nav="speedrun"><span id="nav-speedrun"></span>Speed Run</button><button class="nav-btn" onclick="showScreen('badges')" data-nav="badges"><span id="nav-badges"></span>الشارات</button><button class="nav-btn" onclick="showScreen('profile')" data-nav="profile"><span id="nav-profile"></span>التقدم</button></nav><main class="main">
+    <section class="screen active" id="home"><div class="hero"><div class="hero-card"><div class="kicker">system.start()</div><h1 class="hero-title">تعلم البرمجة بأسلوب <span>CodeLingo</span></h1><p class="hero-text">مراحل ووحدات لكل لغة، تمارين اختيار وكتابة كود، اختبارات نهائية، شارات، وحفظ سكربتات داخل المختبر.</p><div class="hero-actions"><button class="btn" onclick="showScreen('learn')">ابدأ التعلم</button><button class="btn secondary" onclick="resumeLast()">واصل آخر درس</button><button class="btn secondary" onclick="showScreen('playground')">افتح المختبر</button></div><div class="terminal-line">const mission = 'learn to code';</div></div><div class="hacker-panel">
+  <svg class="hacker-avatar pro-hacker" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" aria-label="CodeLingo hacker model">
+    <defs>
+      <radialGradient id="hoodGlow" cx="50%" cy="38%" r="70%">
+        <stop offset="0" stop-color="#123B2A"/>
+        <stop offset="0.55" stop-color="#07110D"/>
+        <stop offset="1" stop-color="#020403"/>
+      </radialGradient>
+      <linearGradient id="screenGrad" x1="0" x2="1" y1="0" y2="1">
+        <stop stop-color="#002B18"/>
+        <stop offset="1" stop-color="#00FF88" stop-opacity="0.18"/>
+      </linearGradient>
+      <filter id="greenBlur" x="-50%" y="-50%" width="200%" height="200%">
+        <feGaussianBlur stdDeviation="3" result="b"/>
+        <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+    </defs>
+    <circle class="hacker-aura" cx="120" cy="112" r="104" fill="#00FF88" opacity="0.055"/>
+    <ellipse cx="120" cy="222" rx="78" ry="10" fill="#000" opacity="0.45"/>
+    <path class="hacker-hood" d="M54 112C60 54 88 26 120 26s60 28 66 86l-19 70H73z" fill="url(#hoodGlow)" stroke="#00FF88" stroke-width="3"/>
+    <path d="M74 108C82 70 100 53 120 53s38 17 46 55c-14-10-29-15-46-15s-32 5-46 15z" fill="#020403" stroke="#00FF88" stroke-opacity="0.75" stroke-width="2"/>
+    <rect class="hacker-visor" x="72" y="102" width="96" height="36" rx="12" fill="#00170C" stroke="#00FF88" stroke-width="2.5" filter="url(#greenBlur)"/>
+    <circle class="hacker-eye left" cx="101" cy="120" r="6" fill="#00FF88"/>
+    <circle class="hacker-eye right" cx="139" cy="120" r="6" fill="#00FF88"/>
+    <path d="M106 145h28" stroke="#00FF88" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
+    <path class="hacker-body" d="M72 178c9-24 26-36 48-36s39 12 48 36l-14 34H86z" fill="#07110D" stroke="#00FF88" stroke-width="2"/>
+    <g class="hacker-computer">
+      <rect x="44" y="150" width="152" height="64" rx="10" fill="#03100A" stroke="#00FF88" stroke-width="3"/>
+      <rect class="computer-screen" x="56" y="160" width="128" height="42" rx="6" fill="url(#screenGrad)" stroke="#00FF88" stroke-opacity="0.55"/>
+      <path class="screen-code code-a" d="M66 171h26M66 183h42M66 194h30" stroke="#00FF88" stroke-width="3" stroke-linecap="round"/>
+      <path class="screen-code code-b" d="M132 171h34M120 184h46M138 194h28" stroke="#39FF14" stroke-width="2.4" stroke-linecap="round" opacity="0.8"/>
+      <path d="M86 214h68l8 14H78z" fill="#020403" stroke="#00FF88" stroke-width="2"/>
+      <g class="keyboard-lines" stroke="#00FF88" stroke-width="1.5" opacity="0.6">
+        <line x1="87" y1="221" x2="153" y2="221"/>
+        <line x1="96" y1="226" x2="144" y2="226"/>
+      </g>
+    </g>
+  </svg>
+  <div class="terminal-line">root@codelingo:~$ practice</div>
+</div></div><h2 class="section-title"><span id="title-langs"></span>المسارات البرمجية</h2><div class="grid" id="homeLangs"></div></section>
+    <section class="screen" id="learn"><h2 class="section-title"><span id="title-learn"></span>اختر لغة أو مسار</h2><div class="search-box"><input id="lessonSearch" placeholder="ابحث داخل الدروس: HTML, flex, function..." oninput="searchLessons(this.value)"><button class="btn secondary" onclick="lessonSearch.value='';searchLessons('')">مسح</button></div><div id="searchResults"></div><div class="grid" id="langGrid"></div></section>
+    <section class="screen" id="lessons"><button class="back" onclick="showScreen('learn')">رجوع للغات</button><div class="panel"><div class="unit-head"><div><h2 id="langTitle"></h2><p class="small" id="langDesc"></p></div><button class="btn secondary" id="finalBtn" onclick="startFinal(currentLang)">اختبار نهائي</button></div><div id="unitsWrap"></div></div></section>
+    <section class="screen" id="lesson"><button class="back" onclick="openLanguage(currentLang)">رجوع للدروس</button><div class="lesson-view"><div class="panel lesson-content"><h2 id="lessonTitle"></h2><p id="lessonText"></p><div class="code-box" id="lessonCode"></div></div><div class="challenge-card"><div class="kicker" id="challengeType">challenge()</div><div class="question" id="question"></div><div id="challengeArea"></div><div class="feedback" id="feedback"></div><button class="btn" style="margin-top:12px;width:100%" id="nextLessonBtn" onclick="finishLesson()">إنهاء الدرس وإضافة XP</button></div></div></section>
+    <section class="screen" id="final"><button class="back" onclick="openLanguage(currentLang)">رجوع للدروس</button><div class="panel"><h2 id="finalTitle"></h2><p class="small" id="finalMeta"></p><div class="challenge-card" style="margin-top:14px"><div class="question" id="finalQuestion"></div><div class="answers" id="finalAnswers"></div></div></div></section>
+    <section class="screen" id="result"><div class="panel" style="text-align:center"><h2 class="section-title" style="justify-content:center"><span id="title-result"></span>نتيجة المجموعة</h2><p id="resultText" style="color:var(--muted);font-weight:800;line-height:1.8;margin:12px 0"></p><div class="profile-grid"><div class="profile-card"><span>XP مكتسب</span><b id="resultXp">0</b></div><div class="profile-card"><span>الوحدة</span><b id="resultUnit">0</b></div><div class="profile-card"><span>الحالة</span><b id="resultStatus">OK</b></div><div class="profile-card"><span>التالي</span><b id="resultNext">Run</b></div></div><br><button class="btn" onclick="continueAfterResult()">متابعة</button> <button class="btn secondary" onclick="openLanguage(currentLang)">رجوع للمسار</button></div></section><section class="screen" id="playground"><div class="playground"><div class="editor-panel"><div class="tabs"><button class="tab active" onclick="switchTab('html',event)">HTML</button><button class="tab" onclick="switchTab('css',event)">CSS</button><button class="tab" onclick="switchTab('js',event)">JS</button></div><textarea class="code-editor" id="htmlEditor"></textarea><textarea class="code-editor" id="cssEditor" style="display:none"></textarea><textarea class="code-editor" id="jsEditor" style="display:none"></textarea><div class="runbar"><button class="btn" onclick="runCode()">تشغيل</button><button class="btn secondary" onclick="resetCode()">مثال</button><button class="btn secondary" onclick="saveScriptPrompt()">حفظ السكربت</button><button class="btn secondary" onclick="copyFullCode()">نسخ الكود الكامل</button><button class="btn secondary" onclick="downloadProject()">تحميل HTML</button><button class="btn secondary" onclick="clearConsole()">مسح Console</button><button class="btn secondary" onclick="reviewCode()">فحص الكود</button><button class="btn secondary" onclick="toggleDeviceFrame()">إطار هاتف</button></div></div><div class="preview-panel"><iframe class="preview" id="preview" sandbox="allow-scripts"></iframe><pre class="console" id="console">Console ready...</pre></div></div><div class="panel suggestions-panel"><h2 class="section-title"><span id="title-suggestions"></span>اقتراحات المختبر</h2><p class="small">قوالب خضراء جاهزة: ألعاب، أدوات، أصوات، وأساسيات بناء مواقع.</p><div class="template-grid"><button class="template-btn" onclick="newProject()">مشروع جديد</button><button class="template-btn" onclick="loadTemplate('card')">قالب بطاقة</button><button class="template-btn" onclick="loadTemplate('todo')">قالب Todo</button><button class="template-btn" onclick="loadTemplate('landing')">قالب صفحة</button><button class="template-btn" onclick="loadTemplate('jump')">لعبة قفز</button><button class="template-btn" onclick="loadTemplate('todo')">لعبة Todo</button><button class="template-btn" onclick="loadTemplate('cube3d')">تجربة 3D</button><button class="template-btn" onclick="loadTemplate('calculator')">آلة حاسبة</button><button class="template-btn" onclick="loadTemplate('piano')">بيانو</button><button class="template-btn" onclick="loadTemplate('sounds')">أصوات</button><button class="template-btn" onclick="loadTemplate('clicker')">عداد نقر</button><button class="template-btn" onclick="loadTemplate('reaction')">اختبار سرعة</button><button class="template-btn" onclick="loadTemplate('xo')">لعبة XO</button><button class="template-btn" onclick="loadTemplate('snake')">Snake</button><button class="template-btn" onclick="loadTemplate('memory')">Memory Cards</button><button class="template-btn" onclick="loadTemplate('rps')">حجر ورقة مقص</button><button class="template-btn" onclick="loadTemplate('password')">مولد كلمات مرور</button><button class="template-btn" onclick="loadTemplate('clock')">ساعة رقمية</button><button class="template-btn" onclick="loadTemplate('stopwatch')">مؤقت إيقاف</button><button class="template-btn" onclick="loadTemplate('countdown')">عد تنازلي</button><button class="template-btn" onclick="loadTemplate('weather')">بطاقة طقس</button><button class="template-btn" onclick="loadTemplate('login')">Login Form</button><button class="template-btn" onclick="loadTemplate('navbar')">Navbar</button><button class="template-btn" onclick="loadTemplate('modal')">Modal Popup</button><button class="template-btn" onclick="loadTemplate('gallery')">Image Gallery</button><button class="template-btn" onclick="loadTemplate('pricing')">Pricing Cards</button><button class="template-btn" onclick="loadTemplate('colors')">أساسيات الألوان</button><button class="template-btn" onclick="loadTemplate('layout')">بناء موقع</button><button class="template-btn" onclick="loadTemplate('landing')">صفحة هبوط</button></div></div><div class="panel snippets-panel"><h2 class="section-title"><span id="title-snippets"></span>Snippets Library</h2><div class="template-grid"><button class="template-btn" onclick="insertSnippet('button')">زر تفاعلي</button><button class="template-btn" onclick="insertSnippet('card')">كرت</button><button class="template-btn" onclick="insertSnippet('input')">Input</button><button class="template-btn" onclick="insertSnippet('event')">Event Listener</button><button class="template-btn" onclick="insertSnippet('flex')">Flex CSS</button><button class="template-btn" onclick="insertSnippet('grid')">Grid CSS</button><button class="template-btn" onclick="insertSnippet('fetch')">Fetch Template</button></div></div><div class="panel" style="margin-top:14px"><h2 class="section-title"><span id="title-scripts"></span>السكربتات المحفوظة</h2><div class="script-list" id="scriptsList"></div></div></section>
+    <section class="screen" id="badges"><div class="panel"><h2 class="section-title"><span id="title-badges"></span>الشارات والإنجازات</h2><div class="badge-grid" id="badgeGrid"></div></div></section>
+    <section class="screen" id="roadmap"><div class="panel"><div class="feature-hero-model roadmap-model"><span id="big-roadmap-model"></span><div><h2>Roadmap / Skill Tree</h2><p>خريطة مهارات عامة تعرض تقدمك في كل مسار.</p></div></div><div class="roadmap-tree" id="roadmapTree"></div></div></section>
+    <section class="screen" id="quests"><div class="panel"><div class="feature-hero-model quest-model"><span id="big-quest-model"></span><div><h2>Daily Quest</h2><p>مهام يومية تعطيك XP إضافي.</p></div></div><div class="quest-list" id="questList"></div><br><button class="btn" id="claimQuestBtn" onclick="claimDailyQuest()">استلام مكافأة اليوم</button></div></section>
+    <section class="screen" id="review"><div class="panel"><div class="feature-hero-model review-model"><span id="big-review-model"></span><div><h2>مراجعة ذكية للأخطاء</h2><p>الأسئلة التي أخطأت فيها تظهر هنا للمراجعة.</p></div></div><div id="reviewBox"></div></div></section>
+    <section class="screen" id="speedrun"><div class="panel"><div class="feature-hero-model speed-model"><span id="big-speed-model"></span><div><h2>Speed Run</h2><p class="small" id="speedMeta">10 أسئلة في 60 ثانية.</p></div></div><div class="challenge-card"><div class="question" id="speedQuestion"></div><div class="answers" id="speedAnswers"></div></div></div></section>
+    <section class="screen" id="practice"><div class="panel"><div class="feature-hero-model practice-model"><span id="big-practice-model"></span><div><h2>Practice Mix</h2><p class="small" id="practiceMeta">15 تمرين عشوائي من كل المسارات وكل أنواع التمارين.</p></div></div><div class="challenge-card"><div class="question" id="practiceQuestion"></div><div id="practiceArea"></div><div class="feedback" id="practiceFeedback"></div></div></div></section>
+    <section class="screen" id="mistakes"><div class="panel"><div class="feature-hero-model mistakes-model"><span id="big-mistakes-model"></span><div><h2>مكتبة الأخطاء الشائعة</h2><p>نماذج أخطاء وتصحيحها لتتعلم أسرع.</p></div></div><div class="mistake-library" id="mistakeLibrary"></div></div></section>
+    <section class="screen" id="projects"><div class="panel"><div class="feature-hero-model projects-model"><span id="big-projects-model"></span><div><h2>مشاريع المستخدم</h2><p>كل السكربتات المحفوظة مرتبة كبطاقات مستقلة. يمكنك أيضًا رفع ملف HTML أو CSS أو JS وتشغيله في المختبر.</p></div></div><div class="upload-box"><div><b>رفع مشروع من جهازك</b><div class="small">يدعم: .html .htm .css .js .txt — سيتم فتحه مباشرة في المختبر وحفظه في مشاريعي.</div></div><div class="upload-actions"><label class="btn secondary upload-label"><input type="file" id="projectFileInput" accept=".html,.htm,.css,.js,.txt,text/html,text/css,text/javascript,application/javascript,text/plain" onchange="importProjectFiles(this.files); this.value='';">اختيار ملف</label><label class="btn secondary upload-label"><input type="file" id="projectFolderInput" webkitdirectory directory multiple onchange="importProjectFiles(this.files); this.value='';">اختيار مجلد</label></div></div><div class="project-grid" id="projectsGrid"></div></div></section>
+    <section class="screen" id="statsDetail"><div class="panel"><div class="feature-hero-model stats-model"><span id="big-stats-model"></span><div><h2>إحصائيات مفصلة</h2><p>تحليل شامل لتقدمك ونقاط القوة والضعف.</p></div></div><div id="levelBox"></div><div class="profile-grid" id="detailStatsGrid"></div><h2 class="section-title">أهداف أسبوعية</h2><div class="quest-list" id="weeklyGoals"></div></div></section>
+    <section class="screen" id="profile"><div class="panel"><h2 class="section-title"><span id="title-profile"></span>تقدمك</h2><div class="profile-grid"><div class="profile-card"><span>نقاط الخبرة</span><b id="profileXp">0</b></div><div class="profile-card"><span>الدروس</span><b id="profileDone">0</b></div><div class="profile-card"><span>اختبارات نهائية</span><b id="profileFinals">0</b></div><div class="profile-card"><span>سكربتات محفوظة</span><b id="profileScripts">0</b></div></div><div class="settings-row"><div><b>تأثيرات الصوت</b><div class="small">أصوات النقر والإجابة والإنجاز</div></div><button class="switch active" id="soundSwitch" onclick="toggleSound()"></button></div><div class="settings-row"><div><b>Lite Mode</b><div class="small">إيقاف المؤثرات الثقيلة لتحسين الأداء</div></div><button class="switch" id="effectsSwitch" onclick="toggleEffects()"></button></div><br><button class="btn secondary" onclick="toggleFocusMode()">Focus Mode</button> <button class="btn secondary" onclick="logoutUser()">تسجيل خروج</button> <button class="btn secondary" onclick="downloadCertificate()">تحميل شهادة</button> <button class="btn danger" onclick="resetProgress()">إعادة التقدم</button></div></section>
+  </main></div>
+  <script src="app.js"></script>
+</body>
+</html>
